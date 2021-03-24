@@ -13,3 +13,4 @@ elif age < 12:
     print(f"At {age}, you can watch moives rated {ratings[1]}, but it's reccomended that an adult accompany you.\nYou can watch movies rated {ratings[0]} without accompaniment.")
 else:
     print("Something went wrong...") # this will execute if none of the other conditions are met
+
