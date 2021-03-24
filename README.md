@@ -88,4 +88,42 @@ for key, value in food_bill.items():
 
 ```
 
+**Nested Loops** - or loops within loops  
+Useful for going through grid-like data and lists that contain lists. In the previous example, I'm looping through a dictionary that contains three dictionaries. I was only looping through one of the dictionaries, though
+
+Looping through a dictionary within another dictionary:
+```python
+for val1 in food_bill.values():
+    for val2 in val1.values():
+        print(val2)
+```
 ### While Loops
+These loops are useful for when you don't know how many times you are going to iterate over some data.
+
+
+```python
+while num < 10:
+    print(num)
+    num += 1 # if you leave this out, the loop will run forever (until the programme crashes)
+```
+
+Just like in ``for`` loops, you can end a ``while`` loop using the ``break`` keyword
+
+```python
+while num < 10:
+    print(num)
+    if num == 4:
+        break
+    num += 1
+```
+This is very useful for validating input
+```python
+while True:    
+    age = input("Please enter your age: ")
+    if age.isdigit():
+        break
+  
+    print("Please enter your age as a whole number!\n")
+
+print(f"Your age: {age}") # this won't run until the an input with only digits is entered
+```

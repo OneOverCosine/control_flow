@@ -22,13 +22,37 @@ food_bill = {
     }
 
 # Looping through keys
-for key in food_bill.keys():
-    print(key)
+# for key in food_bill.keys():
+#     print(key)
 
 # Looping through values
-for value in food_bill.values():
-    print(value)
+# for value in food_bill.values():
+#     print(value)
 
 # Looping through both
-for key, value in food_bill.items():
-    print(f"{key}: {value}")
+# for key, value in food_bill.items():
+#     print(f"{key}: {value}")
+
+
+# for val1 in food_bill.values():
+#     for val2 in val1.values():
+#         print(val2)
+
+# working with while
+
+# num = 0
+# while num < 10:
+#     print(num)
+#     if num == 4:
+#         break
+#     num += 1
+
+while True:    
+    age = input("Please enter your age: ")
+    if age.isdigit():
+        break
+  
+    print("Please enter your age as a whole number!\n")
+
+
+print(f"Your age: {age}")
